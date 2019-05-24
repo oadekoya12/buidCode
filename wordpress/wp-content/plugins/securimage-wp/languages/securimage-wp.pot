@@ -1,0 +1,573 @@
+# Copyright (C) 2018 Securimage-WP
+# This file is distributed under the same license as the Securimage-WP package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Securimage-WP 3.6.14\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/securimage-wp\n"
+"POT-Creation-Date: 2018-03-04 12:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. #-#-#-#-#  securimage-wp.pot (Securimage-WP 3.6.14)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: securimage-wp.formidable.class.php:60 securimage-wp.nf.class.php:25
+#: securimage-wp.cf7.service.php:58 securimage-wp.cf7.service.php:92
+#: securimage-wp.cf7.service.php:153
+msgid "Securimage-WP"
+msgstr ""
+
+#: securimage-wp.nf.class.php:36
+msgid "CAPTCHA"
+msgstr ""
+
+#: securimage-wp.nf.class.php:60 securimage-wp.cf7.service.php:142
+msgid ""
+"To customize the CAPTCHA appearance on your contact form, go to Settings &gt;"
+"&gt; Securimage-WP."
+msgstr ""
+
+#: securimage-wp.php:84
+msgid "Securimage-WP does not yet support WordPress MultiSite."
+msgstr ""
+
+#: securimage-wp.php:141
+msgid ""
+"Securimage-WP CAPTCHA would appear here if you were not logged in as a "
+"WordPress administrator"
+msgstr ""
+
+#: securimage-wp.php:183
+msgid "CAPTCHA Image"
+msgstr ""
+
+#: securimage-wp.php:242
+msgid "Refresh Image"
+msgstr ""
+
+#: securimage-wp.php:246
+msgid "Reload Image"
+msgstr ""
+
+#: securimage-wp.php:284
+msgid "Enter solution"
+msgstr ""
+
+#: securimage-wp.php:285
+msgid "Enter code"
+msgstr ""
+
+#: securimage-wp.php:316
+msgid "Submit Comment"
+msgstr ""
+
+#: securimage-wp.php:359 securimage-wp.php:361 securimage-wp.php:367
+#: securimage-wp.php:369 securimage-wp.php:422
+#, php-format
+msgid "<strong>ERROR</strong>: %s"
+msgstr ""
+
+#: securimage-wp.php:361 securimage-wp.php:369
+#, php-format
+msgid "Please go %sback%s and try again."
+msgstr ""
+
+#: securimage-wp.php:364
+msgid "Rate limit exceeded"
+msgstr ""
+
+#: securimage-wp.php:517
+msgid "The security token is invalid."
+msgstr ""
+
+#: securimage-wp.php:523
+msgid "Missing security token from submission."
+msgstr ""
+
+#: securimage-wp.php:536
+msgid "The security code entered was incorrect."
+msgstr ""
+
+#: securimage-wp.php:753
+msgid "Settings"
+msgstr ""
+
+#: securimage-wp.php:888
+msgid "The language you are attempting to install is not a supported language"
+msgstr ""
+
+#: securimage-wp.php:895
+#, php-format
+msgid ""
+"The audio directory (%s) is not writable by the server - cannot install "
+"language files."
+msgstr ""
+
+#: securimage-wp.php:902
+msgid ""
+"Failed to create directory for audio files - cannot install language files"
+msgstr ""
+
+#: securimage-wp.php:915
+#, php-format
+msgid ""
+"The language file could not be downloaded.  You may need to manually "
+"download and install the language files from %s"
+msgstr ""
+
+#: securimage-wp.php:919 securimage-wp.php:933
+msgid "Reason:"
+msgstr ""
+
+#: securimage-wp.php:932
+msgid "Failed to unzip language file."
+msgstr ""
+
+#: securimage-wp.php:944
+#, php-format
+msgid ""
+"Failed to extract contents of language file %s to %s.  Ensure directory is "
+"writable by the server."
+msgstr ""
+
+#: securimage-wp.php:1013
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: securimage-wp.php:1039
+#, php-format
+msgid "%d old CAPTCHA codes were deleted from the database."
+msgstr ""
+
+#: securimage-wp.php:1044
+msgid "Thank you for using Securimage-WP."
+msgstr ""
+
+#: securimage-wp.php:1045
+msgid "The donation window will no longer appear."
+msgstr ""
+
+#: securimage-wp.php:1046
+#, php-format
+msgid ""
+"If you have a moment, please take a moment to <a href=\"%s\" "
+"target=\"_blank\">rate this plugin</a>.  Thank you!"
+msgstr ""
+
+#: securimage-wp.php:1052
+msgid ""
+"Thank you very much for your contribution!  Your support is greatly "
+"appreciated."
+msgstr ""
+
+#: securimage-wp.php:1060
+msgid "The plugin statistics have been reset."
+msgstr ""
+
+#: securimage-wp.php:1070
+msgid "The audio files were downloaded and installed successfully!"
+msgstr ""
+
+#: securimage-wp.php:1081
+msgid "Securimage-WP Options"
+msgstr ""
+
+#: securimage-wp.php:1082
+msgid "Plugin Support/Contact"
+msgstr ""
+
+#: securimage-wp.php:1082
+msgid "Leave a Comment"
+msgstr ""
+
+#: securimage-wp.php:1082
+msgid "Rate This Plugin"
+msgstr ""
+
+#: securimage-wp.php:1093
+msgid "Plugin Stats:"
+msgstr ""
+
+#: securimage-wp.php:1095
+msgid "Number of CAPTCHAs displayed:"
+msgstr ""
+
+#: securimage-wp.php:1096
+msgid "Reset Statistics"
+msgstr ""
+
+#: securimage-wp.php:1098
+msgid "Number of failed validations:"
+msgstr ""
+
+#: securimage-wp.php:1099
+msgid "Number of submissions missing CAPTCHA:"
+msgstr ""
+
+#: securimage-wp.php:1100
+msgid "Number of passed validations:"
+msgstr ""
+
+#: securimage-wp.php:1101
+msgid "Number of codes in the database:"
+msgstr ""
+
+#: securimage-wp.php:1102
+msgid "Purge Expired Codes"
+msgstr ""
+
+#: securimage-wp.php:1112
+#, php-format
+msgid ""
+"If you have found that this plugin has been helpful and saved you time, "
+"please consider making a one-time donation.  The requested donation amount "
+"is %s."
+msgstr ""
+
+#: securimage-wp.php:1112
+msgid "$4 USD"
+msgstr ""
+
+#: securimage-wp.php:1113
+msgid "Thank you for using this plugin."
+msgstr ""
+
+#: securimage-wp.php:1124
+msgid "No Thanks"
+msgstr ""
+
+#: securimage-wp.php:1124
+msgid "I've Already Donated"
+msgstr ""
+
+#: securimage-wp.php:1135 securimage-wp.php:1401
+msgid "Save Changes"
+msgstr ""
+
+#: securimage-wp.php:1138
+msgid "Protection Options"
+msgstr ""
+
+#: securimage-wp.php:1142
+msgid "Enable on comment form:"
+msgstr ""
+
+#: securimage-wp.php:1142
+msgid "Enable captcha protection on comment form"
+msgstr ""
+
+#: securimage-wp.php:1147
+msgid "Enable on registration form:"
+msgstr ""
+
+#: securimage-wp.php:1147
+msgid "Enable captcha protecion on registration form"
+msgstr ""
+
+#: securimage-wp.php:1152
+msgid "Enable on login form:"
+msgstr ""
+
+#: securimage-wp.php:1152
+msgid "Enable captcha protecion on login form"
+msgstr ""
+
+#: securimage-wp.php:1157
+msgid "Enable on lost password form:"
+msgstr ""
+
+#: securimage-wp.php:1157
+msgid "Enable captcha protecion on the lost password retrieval form"
+msgstr ""
+
+#: securimage-wp.php:1162
+msgid "CAPTCHA Image Options"
+msgstr ""
+
+#: securimage-wp.php:1166
+msgid "Code Length:"
+msgstr ""
+
+#: securimage-wp.php:1166
+msgid "Does not apply to math CAPTCHA"
+msgstr ""
+
+#: securimage-wp.php:1177
+msgid "Image Width:"
+msgstr ""
+
+#: securimage-wp.php:1177
+msgid "Image width in pixels from 125-500 (Default: 215)"
+msgstr ""
+
+#: securimage-wp.php:1182
+msgid "Image Height:"
+msgstr ""
+
+#: securimage-wp.php:1182
+msgid "Image height in pixels from 40-200 (Default: 80)"
+msgstr ""
+
+#: securimage-wp.php:1187
+msgid "Image Background Color"
+msgstr ""
+
+#: securimage-wp.php:1192
+msgid "Text Color"
+msgstr ""
+
+#: securimage-wp.php:1197
+msgid "Number of Distortion Lines"
+msgstr ""
+
+#: securimage-wp.php:1202
+msgid "Distortion Line Color"
+msgstr ""
+
+#: securimage-wp.php:1207
+msgid "Noise Level (0-10)"
+msgstr ""
+
+#: securimage-wp.php:1212
+msgid "Noise Color"
+msgstr ""
+
+#: securimage-wp.php:1217
+msgid "Image Signature Text"
+msgstr ""
+
+#: securimage-wp.php:1222
+msgid "Signature Text Color"
+msgstr ""
+
+#: securimage-wp.php:1227
+msgid "Use Mathematic Captcha"
+msgstr ""
+
+#: securimage-wp.php:1227
+msgid "Display a simple math problem instead of letters and numbers."
+msgstr ""
+
+#: securimage-wp.php:1232
+msgid "Audio CAPTCHA Options"
+msgstr ""
+
+#: securimage-wp.php:1236
+msgid "Disable Audio CAPTCHA"
+msgstr ""
+
+#: securimage-wp.php:1241
+msgid "Disable Flash Audio Fallback"
+msgstr ""
+
+#: securimage-wp.php:1241
+msgid ""
+"HTML5 audio is used by default but optional Flash fallback can be used by "
+"browsers that do not support HTML5 audio (See FAQ for more info)."
+msgstr ""
+
+#: securimage-wp.php:1246
+msgid "LAME Encoder Path"
+msgstr ""
+
+#: securimage-wp.php:1246
+msgid ""
+"Audio is output in WAV format unless the LAME encoder is installed.  "
+"Internet Explorer 9+ support HTML5 audio but do not support WAV format.  If "
+"LAME is not installed Flash will be used unless Flash fallback is disabled, "
+"in which case the audio icon will be hidden."
+msgstr ""
+
+#: securimage-wp.php:1251
+msgid ""
+"The LAME encoder binary was not found on your system.  In order to support "
+"MP3 audio you must install LAME and add its path to PHPs open_basedir and in "
+"the above field.  See FAQ for details."
+msgstr ""
+
+#: securimage-wp.php:1253
+msgid "The path to LAME is correctly set."
+msgstr ""
+
+#: securimage-wp.php:1259
+msgid "Audio Language"
+msgstr ""
+
+#: securimage-wp.php:1259
+msgid "Language to use for the audio CAPTCHA"
+msgstr ""
+
+#: securimage-wp.php:1259
+msgid ""
+"The language files must be installed separately from the plugin before they "
+"can be selected"
+msgstr ""
+
+#: securimage-wp.php:1269
+msgid "Installed Languages"
+msgstr ""
+
+#: securimage-wp.php:1275 securimage-wp.php:1294
+msgid "Installed"
+msgstr ""
+
+#: securimage-wp.php:1275 securimage-wp.php:1294
+msgid "Reinstall"
+msgstr ""
+
+#: securimage-wp.php:1277 securimage-wp.php:1296
+msgid "Not Installed"
+msgstr ""
+
+#: securimage-wp.php:1278 securimage-wp.php:1297
+msgid "Install"
+msgstr ""
+
+#: securimage-wp.php:1286
+msgid "Noise Files"
+msgstr ""
+
+#: securimage-wp.php:1286
+msgid ""
+"Noise files are optional but can greatly increase the security of the "
+"CAPTCHA audio by adding random, background noise to the generated files."
+msgstr ""
+
+#: securimage-wp.php:1303
+msgid "Audio Button Icon URL"
+msgstr ""
+
+#: securimage-wp.php:1303
+msgid "For best results, this should be hosted on the same domain as WordPress"
+msgstr ""
+
+#: securimage-wp.php:1311
+msgid "Audio Loading Icon URL"
+msgstr ""
+
+#: securimage-wp.php:1311
+msgid ""
+"For best results, this should be a spinner icon (PNG format) that will be "
+"rotated using CSS3 transitions"
+msgstr ""
+
+#: securimage-wp.php:1319
+msgid "Flash Button Background Color"
+msgstr ""
+
+#: securimage-wp.php:1319
+msgid "Background color to use for Flash button"
+msgstr ""
+
+#: securimage-wp.php:1324
+msgid "Miscellaneous Options"
+msgstr ""
+
+#: securimage-wp.php:1328
+msgid "Display Sequence"
+msgstr ""
+
+#: securimage-wp.php:1328
+msgid "Control the arrangement of CAPTCHA inputs"
+msgstr ""
+
+#: securimage-wp.php:1338
+msgid "Use Text for Image Refresh"
+msgstr ""
+
+#: securimage-wp.php:1341
+msgid "Display Text:"
+msgstr ""
+
+#: securimage-wp.php:1342
+msgid "Different Image"
+msgstr ""
+
+#: securimage-wp.php:1347
+msgid "Fix CAPTCHA Position"
+msgstr ""
+
+#: securimage-wp.php:1347
+msgid "If CAPTCHA shows up below comment submit button, enable this option"
+msgstr ""
+
+#: securimage-wp.php:1352
+msgid "CAPTCHA expiration time"
+msgstr ""
+
+#: securimage-wp.php:1352
+msgid "In seconds, how long before the CAPTCHA expires and is no longer valid"
+msgstr ""
+
+#: securimage-wp.php:1357
+msgid "Debug Image Errors:"
+msgstr ""
+
+#: securimage-wp.php:1360
+msgid "View image directly"
+msgstr ""
+
+#: securimage-wp.php:1373 securimage-wp.php:1382 securimage-wp.php:1391
+#, php-format
+msgid "CSS class name(s) to add to CAPTCHA %s tag"
+msgstr ""
+
+#: securimage-wp.php:1377 securimage-wp.php:1386 securimage-wp.php:1395
+#, php-format
+msgid "Inline CSS style to add to CAPTCHA %s tag"
+msgstr ""
+
+#: securimage-wp.php:1405
+msgid "Image Preview:"
+msgstr ""
+
+#: securimage-wp.php:1413
+msgid "Are you sure you want to reset the plugin statistics?"
+msgstr ""
+
+#: securimage-wp.cf7.service.php:105
+msgid "Securimage-WP Plugin"
+msgstr ""
+
+#: securimage-wp.cf7.service.php:141
+msgid "Securimage is a widely used, self-hosted, open-source PHP CAPTCHA."
+msgstr ""
+
+#: securimage-wp.cf7.service.php:143
+#, php-format
+msgid "For more details, see %s."
+msgstr ""
+
+#: securimage-wp.cf7.service.php:143
+msgid "Securimage-WP WordPress Plugin"
+msgstr ""
+
+#: securimage-wp.cf7.service.php:151
+#, php-format
+msgid ""
+"Generate a form-tag for a Securimage-WP captcha image. For more details, see "
+"%s."
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "CAPTCHA plugin for site registration and post/page comment forms"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.phpcaptcha.org/download/wordpress-plugin/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Drew Phillips"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.phpcaptcha.org/"
+msgstr ""

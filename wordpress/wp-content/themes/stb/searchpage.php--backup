@@ -1,0 +1,22 @@
+<?php  /* Template Name: Search Page */ 
+get_header(); 
+?>
+<div class="row">
+<div class="page-format">
+   <div class="col-sm-12">
+	   <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/" style="padding-left: 1.5em; padding-bottom: 1em;">
+		<?php if(function_exists('bcn_display'))
+		{
+			bcn_display();
+		}?>
+		</div>
+     <div class="indent-1em"><h2>Site Search</h2>
+	 <?php //get_search_form(); ?>
+	 <?php get_template_part( 'search', 'stb' ); ?>
+   </div>
+   </div>
+   <!-- /.col -->
+   </div>
+</div>
+<!-- /.row -->
+<?php get_footer(); ?>
