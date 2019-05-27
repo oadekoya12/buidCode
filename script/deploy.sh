@@ -1,83 +1,89 @@
 #!/bin/bash
 
-cd "C:\www\env\repo"
-cPWD=$(pwd)
-echo "Change directory to " $cPWD
+# Three variable areas
+# ----------------------
+tmp="${HOMEPATH}/project/tmp"
+branch=$1
+cptodir=$2
+# ----------------------
 
-REPO="origin"
-
+if [[ -d $tmp ]]; then
+  cd $tmp
+  if [[ ! -d repo ]]; then
+    mkdir repo
+  fi
+  cd $tmp/repo
+  echo -e changed directory to $(pwd)
+fi
 
 if [[ -d .git ]]; then
-  echo -e "Prune remote origin"
-  git remote update origin --prune
-  echo -e "Remote branch."
-  git branch -a
-  echo -e "local branch."
-  git branch
-else
-  git clone git+ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/stbwprepo .
-fi
-
-if [[ -z $1 ]]; then
-  echo -e "What branch are you getting?"
-  read branch
-  git ls-remote --heads ${REPO} ${branch} | grep ${branch} >/dev/null
-  if [ "$?" == "1" ] ; then echo "Branch doesn't exist"; exit; fi
-else
-  git ls-remote --heads ${REPO} ${1} | grep ${1} >/dev/null
-  if [ "$?" == "1" ] ; then
-    echo -e "Branch doesn't exist\n"
-    echo -e "What branch are you getting?"
-    read branch
-    git ls-remote --heads ${REPO} ${branch} | grep ${branch} >/dev/null
-    if [ "$?" == "1" ] ; then echo "Branch doesn't exist"; exit; fi
+  if [[ -z $branch ]]; then
+    git remote update origin --prune
+    git branch -a
+    echo -e "What branch do you want to deploy?"
+    read -r branch
   fi
-fi
-
-if [ -d "$cPWD/.git" ]; then
-  if [ ! -z "$branch" ]; then
+  if [[ `git branch -a | grep "remotes/origin/$branch"` ]]; then
+    echo -e "$branch exist"
+    git checkout $branch
+  fi
+else
+  echo -e "Prune remote origin"
+  echo -e ""
+  git clone git+ssh://github.com/oadekoya12/buidCode.git .
+  if [[  -z $branch ]]; then
+    git remote update origin --prune
+    git branch -a
+    echo -e "What branch do you want to deploy?"
+    read -r branch
+  fi
+  if [[ `git branch -a | grep "remotes/origin/$branch"` ]]; then
+    echo -e "$branch exist"
     git checkout $branch
   fi
 fi
 
-cd 'C:\www\env\'
-wwwroot=$(pwd)
+# Copy Branch to destinated Directory
+if [[ ! -z $cptodir ]]; then
 
+  # ----------------------
+  dest="${HOMEPATH}/project/web/www/$cptodir/wordpress"
+  cd $dest
+  dest=$(pwd)
+  # ----------------------
 
-if [[ ! -z $2 ]]; then
-  dest="$wwwroot/$2/wordpress"
   if [[ ! -d "$dest" ]]; then
     echo -e "The Destination Directory does not exist\n"
     echo -e "What is the site directory name?\n"
-    read dest
-    dest="$wwwroot/$dest/wordpress"
+    read -r dest
+
     if [[ ! -d "$dest" ]] ; then echo "Destination directory doesn't exist"; exit; fi
   fi
 else
   echo -e "What Destination Directory do you want to use?\n"
   read dest
-  dest="$wwwroot/$dest/wordpress"
   if [[ ! -d "$dest" ]] ; then echo "Destination directory doesn't exist"; exit; fi
 fi
-# cd 'C:\www\env\tmp'
-# dest=$(pwd)
-cd "$cPWD"
+
 echo -e "Copy git content to $dest\n"
+if [[ ! -d "$tmp/tmp/" ]] ; then mkdir "$tmp/tmp"; fi
 
-#make tmp directory
-tmp="$wwwroot/tmp"
-if [[ ! -d "$tmp" ]] ; then mkdir "$tmp"; fi
-tar -c --exclude .git --exclude README . | tar -x -C "$tmp"
-cp -vr --remove-destination "$tmp/"* "$dest/"
+# ----------------------
+cd $tmp/tmp
+newtmp="$(pwd)"
+cd $tmp/repo
+# ----------------------
 
-echo -e "Cleanup tmp directory\n"
-rm --recursive -f  "$tmp"
-echo -e "\n\n"
-echo -e "Do you want to cleanup $cPWD content (y/n) "
-read repocleanup
-if [[ $repocleanup == "y" ]];then
-   rm --recursive -f "$cPWD/*"
-   echo -e "$cPWD contents removes\n\n"
+if [[ -d  $tmp/repo/wordpress ]]; then
+  "C:\Program Files\Git\usr\bin\tar" -c --exclude .git --exclude README "./wordpress" | "C:\Program Files\Git\usr\bin\tar"  -x -C "$newtmp"
+  cd "$newtmp/wordpress"
+
+  cp -ruvf "$(pwd)/"*  "$dest"
+  cp -ruvf "$(pwd)/".*  "$dest"
+
+  echo -e "Remove $tmp/repo $tmp/tmp"
+  cd "$tmp/"
+  rm -rf 'repo'
+  rm -rf 'tmp'
 fi
-
 echo -e "Done."
